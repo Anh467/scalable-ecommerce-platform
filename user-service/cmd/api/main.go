@@ -7,8 +7,7 @@ import (
 	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/application/service"
 	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/delivery/http/handler"
 	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/delivery/http/router"
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/infrastructure/mssql"
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/infrastructure/postgresql"
+	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/infrastructure/persistence/postgresql"
 
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/joho/godotenv"
@@ -27,14 +26,14 @@ func main() {
 		log.Fatal("Error loading .env file")
 	}
 
-	connStringMSSQL := os.Getenv("DB_CONN_STRING_MSSQL")
+	//connStringMSSQL := os.Getenv("DB_CONN_STRING_MSSQL")
 	connStringPostGreSQL := os.Getenv("DB_CONN_STRING_POSTGRESQL")
 
-	dbMSSQL:= mssql.NewMSSQL(connStringMSSQL)
+	//dbMSSQL:= mssql.NewMSSQL(connStringMSSQL)
 	dbPostGreSQL:= postgresql.NewPOSTGRESQL(connStringPostGreSQL)
 
 	// Repository
-	userRepo := mssql.NewUserRepository(dbMSSQL)
+	userRepo := postgresql.NewUserRepository(dbPostGreSQL)
 
 	// Service
 	userService := service.NewUserService(userRepo)

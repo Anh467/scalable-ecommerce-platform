@@ -1,11 +1,11 @@
-package infrastructure
+package mssql
 
 import (
 	"context"
 	"database/sql"
 
-	"github.com/Anh467/scalable-ecommerce-platform-user-service/internal/domain/entity"
-	"github.com/Anh467/scalable-ecommerce-platform-user-service/internal/domain/repository"
+	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/domain/entity"
+	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/domain/repository"
 	"github.com/google/uuid"
 )
 

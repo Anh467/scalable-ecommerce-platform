@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/Anh467/scalable-ecommerce-platform-user-service/internal/domain/entity"
+	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/domain/entity"
 	"github.com/google/uuid"
 )
 

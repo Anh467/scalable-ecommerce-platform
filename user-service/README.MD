@@ -16,18 +16,18 @@ Dịch vụ quản lý người dùng được xây dựng bằng Golang.
 
 Mở terminal tại thư mục `user-service` và chạy:
 
-# 1. Tải thư viện
+### 1. Tải thư viện
 
 go mod tidy
 
-# 2. Thực thi migration bằng lệnh sau:
+### 2. Thực thi migration bằng lệnh sau:
 
 go run ./cmd/migration/main.go
 
-# 3. Sinh tài liệu Swagger
+### 3. Sinh tài liệu Swagger
 
 swag init -g ./cmd/api/main.go --parseDependency --parseInternal
 
-# 4. Chạy API
+### 4. Chạy API
 
 go run ./cmd/api/main.go

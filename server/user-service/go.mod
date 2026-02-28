@@ -1,4 +1,4 @@
-module github.com/Anh467/scalable-ecommerce-platform/user-service
+module github.com/Anh467/scalable-ecommerce-platform/server/user-service
 
 go 1.24.0
 

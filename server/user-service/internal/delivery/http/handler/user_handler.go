@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/domain/service"
+	"github.com/Anh467/scalable-ecommerce-platform/server/user-service/internal/domain/service"
 	"github.com/gin-gonic/gin"
 )
 

@@ -4,10 +4,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/application/service"
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/delivery/http/handler"
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/delivery/http/router"
-	"github.com/Anh467/scalable-ecommerce-platform/user-service/internal/infrastructure/persistence/postgresql"
+	"github.com/Anh467/scalable-ecommerce-platform/server/user-service/internal/application/service"
+	"github.com/Anh467/scalable-ecommerce-platform/server/user-service/internal/delivery/http/handler"
+	"github.com/Anh467/scalable-ecommerce-platform/server/user-service/internal/delivery/http/router"
+	"github.com/Anh467/scalable-ecommerce-platform/server/user-service/internal/infrastructure/persistence/postgresql"
 
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/joho/godotenv"

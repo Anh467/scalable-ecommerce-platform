@@ -102,3 +102,14 @@ config.go
 container.go
 
 /go.mod
+
+├── user-service
+├── product-service
+├── cart-service
+├── order-service
+├── payment-service
+├── notification-service
+├── api-gateway
+├── frontend (React)
+├── docker-compose.yml
+└── README.md
